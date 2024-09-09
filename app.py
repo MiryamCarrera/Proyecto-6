@@ -24,7 +24,6 @@ if mostrar_histograma:
 if mostrar_dispersion:
     st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
     
-    fig_dispersion = px.scatter(datos, x="odometer", y="price", color="year", title="Relación entre odometer y precio")
+    fig_dispersion = px.scatter(datos, x="odometer", y="price", color="model_year", title="Relación entre odometer y precio")
     
     st.plotly_chart(fig_dispersion, use_container_width=True)
-    
